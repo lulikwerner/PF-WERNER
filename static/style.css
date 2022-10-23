@@ -343,10 +343,10 @@ text-align: center;
     }
 
 }   
-  @media(max-width:550px){
+  @media(max-width:400px){
       .content{
-        height: 120vh;
-        grid-template-rows: 12% 30% 30% 10%;
+        height: 100vh;
+        grid-template-rows: 12% 30% 35% 10%;
       }
       .title{
         font-size: 20px;
