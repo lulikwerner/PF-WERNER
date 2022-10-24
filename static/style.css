@@ -979,3 +979,30 @@ grid-template-rows: 5% 5% 5% 30% 25% 10%;
     font-size: 10px;
   } 
 }
+@media(max-width:400px){
+    .about-abt{
+      height: 80vh;
+      grid-template-rows: 5% 5% 5% 30% 25% 10%;
+    }
+    .title2{
+      font-size: 15PX;  
+    }
+    .name{
+      font-size: 25PX;
+    }
+    .motus{
+      font-size: 15PX;
+    }
+    .description{
+      line-height: 20px;
+      font-size: 10PX;  
+    } 
+    .wrap-abt{
+     margin-left: -10%;
+    }
+    .wrap-abt a{
+   
+      font-size: 8px;
+    } 
+  }
+}
