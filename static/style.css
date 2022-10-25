@@ -886,13 +886,13 @@ ul li:hover{
   -webkit-transform:scale(1.5); /* Safari and Chrome */
   -o-transform:scale(1.5);
 }
-@media(max-width:550px){
+@media(max-width:850px){
   .list-services{
     width: 80%;
     height: 38vh;
     gap: 5%;
     margin-top: 10%;
-    margin-left: 5%;
+    margin-left: 35%;
  
   }
   .list-services h5{
@@ -900,7 +900,7 @@ ul li:hover{
     width: 100%;
     font-weight: 400;
     color: #AB3EA6;
-    font-size: 20PX;
+    font-size: 25PX;
 
   }
   .list-services div p{
@@ -914,6 +914,14 @@ ul li:hover{
     font-weight: 100;
   
   }
+@media(max-width:550px){
+  .list-services{
+    margin-left: 5%;
+ 
+  }
+  .list-services h5{
+    font-size: 20PX;
+
 @media(max-width:400px){
   .list-services{
     width: 80%;
