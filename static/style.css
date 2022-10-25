@@ -15,7 +15,7 @@
     position: relative;
     margin-top: 1%;
     padding: 5px 5%;
-  border-radius: 30px 20px 30px 30px;
+    border-radius: 30px 20px 30px 30px;
   }
   .nav-bar:hover{
     background-color: rgba(0,0,0,0.1);
@@ -312,7 +312,6 @@ text-align: center;
   margin-left: -30%;
 }
 }
-
 @media(max-width:550px){
   .content{
     height: 110vh;
@@ -368,8 +367,6 @@ text-align: center;
             margin-left: -18%;
           }
 }
-
- 
 /*footer*/
 footer{
 display: flex;
@@ -433,155 +430,150 @@ footer div img{
     }
 }
 
-/*contact form*/
+
+/*Contact Form*/
+main{
+  margin-left: 10%;
+}
 .split-screen{
-display: grid;
-grid-template-areas: "title   title"
-                      "desc   input1"
-                     " desc   box1"
-                     " desc   eaddress"
-                     " desc   box2"
-                     " desc   subject"
-                     " desc   box3"
-                     " desc   message"
-                     " desc   box4"
-                     " desc   submit";
-grid-template-columns: 1fr, 2fr;
-grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr 2fr 1fr;
-width: 50%;
-height: 50vh;
-margin: 1% 22%;
-font-family: 'Montserrat', sans-serif;
-font-weight: 100;
-border: 1px solid #fff;
-border-radius: 30px 30px 30px 30px;
-box-shadow: 12px 12px 24px 2px rgba(79,209,197,.64);
-animation: zoomin 1s linear 1s;
-animation-delay: 2s;
-animation-fill-mode: forwards;
-visibility: hidden ;
+  display: grid;
+  grid-template-areas: "title contact2"
+                        "info3 contact2";
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 20% 75%;
+  margin-left:10%;
+  margin-top:3%; 
+  width: 70%;
+  height: 55vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  border: 1px solid #fff;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 12px 12px 24px 2px rgba(79,209,197,.64);
+  animation: zoomin 1s linear 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  visibility: hidden ;
 }
 .copy{
   grid-area: title;
-  width: 100%; 
-  height: auto;
-  margin-top: 15%;
-  margin-left: 8%;
-  font-weight: 400;
+  margin-top: 10%;
+  margin-left: 15%;
 }
-.info{
-  grid-area: desc;
-  width: 80%;  
-  height: 35vh; 
-  margin-top: 8%;
-  margin-left: 8%;
-  font-weight: 100;
-  line-height: 25px;
-  white-space: 2%; 
-  gap: 20px;
-}
+.wrapper{
+  grid-area: info3;
+  text-align: center;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
+  font-weight: 200;
+  line-height: 45px;
 
-.info1 section{
-  grid-area: info1;
-  justify-content: space-around;
-  margin-top: 20%;
-  margin-left: -10%;
 }
-.input1{
-  grid-area: input1;
-  margin-left: 9%;
-  padding-bottom: 3%;
+.contact{
+  grid-area: contact2;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 .box1{
-  grid-area: box1;
-    display: absolute;
-    position: relative;
-    width:70%;
-    margin-left: 10%;
-    margin-bottom: 12px;
-    padding: 10px 0;
-    font-size: 14px;
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  .input2 label{
-    grid-area: eaddress;
-    margin-left: 9%;
-    margin-bottom: 5%;
-  }
-  .box2{
-    grid-area: box2;
-      display: absolute;
-      position: relative;
-      width:70%;
-      margin-left: 10%;
-      margin-bottom: 12px;
-      padding: 10px 0;
-      font-size: 14px;
-      color: #fff;
-      border: none;
-      border-bottom: 1px solid #fff;
-      outline: none;
-      background: transparent;
-    }
-    .input3 label{
-      grid-area: subject;
-      margin-left: 9%;
-      margin-bottom: 5%;
-    }
-    .box3{
-      grid-area: box3;
-      text-align: center;
-      width:70%;
-        margin-left: 10%;
-        margin-bottom: 12px;
-        padding: 10px 0;
-        font-size: 14px;
-        color: #fff;
-        border: none;
-        border-bottom: 1px solid #fff;
-        outline: none;
-        background: transparent;
-      }
-      .input4 label{
-        grid-area: message;
-        margin-left: 9%;
-        margin-bottom: 5%;
-      }
-      .box4{
-        grid-area: box4;
-          text-align: center;
-          width:70%;
-          margin-left: 10%;
-          padding: 10px 0;
-          font-size: 14px;
-          color: #fff;
-          border: none;
-          border-bottom: 1px solid #fff;
-          outline: none;
-          background: transparent;
-        }
-.wrap2{
-grid-area: submit;
-margin-top: 12%;
-margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 5vh;
+  width:70%;
+  margin-left: 1%;
+  padding-top: 5px ;
+  font-size: 14px;
+}
+.box1 input{
+  height: 5vh;
+  padding-top: 1%;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;  
+  font-weight: 100;
+  font-size: medium;
+}
+.box2{
+  display: flex;
+  flex-direction: column;
+  height: 5vh;
+  width:70%;
+  margin-left: 1%;
+  padding-top: 20px ;
+  font-size: 14px;
+}
+.box2 input{
+  padding-top: 1%;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-weight: 100;
+  font-size: medium;
+}
+.box3{
+  display: flex;
+  flex-direction: column;
+  height: 5vh;
+  width:70%;
+  margin-left: 1%;
+  padding-top: 30px ;
+  font-size: 14px;
+
+}
+.box3 input{
+  padding-top: 5%;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-weight: 100;
+  font-size: medium;
+}
+.box4{
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width:70%;
+  margin-left: 1%;
+  padding-top: 50px ;
+  font-size: 14px;
+
+}
+.box4 textarea{
+  padding-top: 5%;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  font-weight: 100;
+  font-size: small;
+}
+.wrap4{ 
+margin-top: 10%;
+margin-left: 40%;
+margin-right: 60%;
 }
 .btn2{
-padding: 10px 50px ;
-border: 1px solid #fff;
-border-radius: 30px;
-text-decoration: none; 
-width: 53%;
-color:#fff;
-}
-.btn2:hover{
-  color: #AB3EA6;
-  border: 1px solid #AB3EA6;
-  animation: pulsate 4s
-}      
+  padding: 10px 50px ;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-decoration: none; 
+  width: 53%;
+  color:#fff;
+  }
+  .btn2:hover{
+    color: #AB3EA6;
+    border: 1px solid #AB3EA6;
+    animation: pulsate 4s
+  } 
+    
+
 
 /*portafolio*/
 .project-cont{
@@ -630,23 +622,17 @@ ul li:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;  
-  height: 200vh;
+  width: 150%;  
+  height: 45vh;
   margin-top: 1%;
- 
 }
 /*Recordatorio asi le doy el mismo tamanio a todas las fotos*/
-.img-container div img{
-  width: 80%;
-  height: 30vh;
-}
-.img-container div h4{
-  display: flex;
-  margin-top: -70%;
-  margin-left: 5vh;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  color: #AB3EA6;
+
+.carousel-item h4{
+ text-align: center;
+ color: #AB3EA6;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 200;
 }
 
 /*Services*/
@@ -714,10 +700,6 @@ ul li:hover{
   -webkit-transform:scale(1.5); /* Safari and Chrome */
   -o-transform:scale(1.5);
 }
-
-
-
-
 /*about*/
 .about-abt{
   display: grid;
