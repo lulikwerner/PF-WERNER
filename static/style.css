@@ -141,7 +141,7 @@
  .bar{
   display: absolute;
   width:100%;
-  height: 100vh;
+  height: 150vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   color:aquamarine;
@@ -434,17 +434,18 @@ footer div img{
 /*Contact Form*/
 main{
   margin-left: 10%;
+  height: 100vh;
 }
 .split-screen{
   display: grid;
   grid-template-areas: "title contact2"
                         "info3 contact2";
   grid-template-columns: repeat(2,1fr);
-  grid-template-rows: 20% 75%;
+  grid-template-rows: 20% 80%;
   margin-left:10%;
   margin-top:3%; 
   width: 70%;
-  height: 55vh;
+  height: 60vh;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   border: 1px solid #fff;
@@ -457,22 +458,21 @@ main{
 }
 .copy{
   grid-area: title;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-left: 15%;
 }
 .wrapper{
   grid-area: info3;
   text-align: center;
-  width: 70%;
-  margin-top: 5%;
+  width: 80%;
+  margin-top: 2%;
   margin-left: 10%;
   font-weight: 200;
   line-height: 45px;
-
 }
 .contact{
   grid-area: contact2;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 5%;
 }
 .box1{
@@ -486,7 +486,8 @@ main{
 }
 .box1 input{
   height: 5vh;
-  padding-top: 1%;
+  padding-top: 5%;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
@@ -505,7 +506,8 @@ main{
   font-size: 14px;
 }
 .box2 input{
-  padding-top: 1%;
+  padding-top: 5%;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
@@ -520,12 +522,13 @@ main{
   height: 5vh;
   width:70%;
   margin-left: 1%;
-  padding-top: 30px ;
+  padding-top: 40px ;
   font-size: 14px;
 
 }
 .box3 input{
   padding-top: 5%;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
@@ -540,19 +543,20 @@ main{
   height: 20vh;
   width:70%;
   margin-left: 1%;
-  padding-top: 50px ;
+  padding-top: 60px ;
   font-size: 14px;
 
 }
 .box4 textarea{
   padding-top: 5%;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
   font-weight: 100;
-  font-size: small;
+  font-size: medium;
 }
 .wrap4{ 
 margin-top: 10%;
@@ -572,8 +576,140 @@ margin-right: 60%;
     border: 1px solid #AB3EA6;
     animation: pulsate 4s
   } 
-    
+  @media(max-width:1024px){
+    .split-screen{
+      grid-template-rows: 20% 80%;
+    }
+    .copy{
+      font-size:3vh;
+      height: 100%;
+      padding-top: 12%;
+      margin-left: 15%;
+    }
+    .wrapper{
+      font-size: medium;
+      text-align: center;
+      padding-top: 6%;
+      line-height: 30px;
+    }
+    .contact{
+      margin-top: 25%;
+      margin-left: 5%;
+      font-size:x-small;
+      font-weight: 100;
+    }
+    .box4 textarea{
+      font-size: 16px;
+    }
+    .wrap4{ 
+      margin-top: 15%;
+      margin-left: 30%;
 
+      }
+  }
+  @media(max-width:850px){
+    .split-screen{
+        display: grid;
+        grid-template-areas: "title"
+                              "info3"
+                              "contact2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 30% 60%;
+        margin-left:10%;
+        margin-top:3%; 
+        width: 70%;
+        height: 90vh;
+      
+      }   
+    .copy{
+      justify-content: center;
+      font-size:3vh;
+      padding-top: 1%;
+      margin-left: 30%;
+    }
+    .wrapper{
+      margin-top: 1%;
+      line-height: 25px;
+    }
+    .contact{
+      margin-top: 6%; 
+      margin-left: 10%;
+    }
+  }
+  @media(max-width:550px){
+    .copy{
+      text-align: center;
+      margin-left: 10%;
+    }
+    .wrapper{
+      line-height: 15px;
+      line-height: 20px;
+    }
+    .contact{
+      margin-top: 1%;
+    }
+    .box1{
+      margin-top: 10%;
+      font-size: 12px;
+    }
+    .box1 input{
+    font-size: small;
+    }
+    .box2{
+      font-size: 12px;
+    }
+    .box2 input{
+      font-size: small;
+      }
+    .box3{
+      font-size: 12px;
+    }
+    .box3 input{
+      font-size: small;
+      }
+    .box4{
+      font-size: 12px;
+    }
+    .box4 textarea{
+        font-size: small;
+    }
+    .wrap4{ 
+      margin-left: 10%;
+      }
+   
+      .btn2{
+        font-size: 10px;
+        width: 30%;
+
+        }
+  }
+  
+  
+  @media(max-width:400px){
+    .split-screen{
+      height: 80vh;
+      
+    }
+    .copy{
+      text-align: center;
+      margin-top: 15%;
+      margin-left: 8%;
+      font-size: 20px;
+    }
+    .wrapper{
+      font-size: small;
+      margin-left: 10%;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+ 
+    .btn2{
+        font-size: 8px;
+        width: 10%;
+
+        }
+  }
 
 /*portafolio*/
 .project-cont{
