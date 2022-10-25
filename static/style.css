@@ -687,28 +687,50 @@ margin-right: 60%;
   
   @media(max-width:400px){
     .split-screen{
-      height: 80vh;
-      
+      height: 60vh;
+      grid-template-rows: 10% 20% 60%;
     }
     .copy{
       text-align: center;
-      margin-top: 15%;
+      margin-top: 10%;  
       margin-left: 8%;
       font-size: 20px;
     }
     .wrapper{
+      margin-top: 5%;
+      overflow-y: scroll;
       font-size: small;
       margin-left: 10%;
     }
-    ::-webkit-scrollbar {
-      width: 10px;
+    .contact{
+      margin-top: 3%;
+      height:10%;
     }
- 
+    .box1{
+      padding-top: 0%;
+    }
+    .box2{
+      padding-top: 5%;
+    }
+    .box3{
+      padding-top: 8%;
+    }
+    .box4{
+      padding-top: 12%;
+    }
+    .box4 textarea{
+      padding-top: 0%;
+      height: 40%;
+    }
+    .wrap4{ 
+      margin-top: -15%;
+        margin-left: 10%;
+    }
+     
     .btn2{
         font-size: 8px;
         width: 10%;
-
-        }
+    }
   }
 
 /*portafolio*/
