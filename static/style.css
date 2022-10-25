@@ -198,13 +198,14 @@ visibility: hidden;
 }
 .btn{
   display: flex;
+  justify-content: center;
   margin-top: 1%;   
   margin-left: 2%;
   padding: 10px 50px ;
   border: 1px solid #fff;
   border-radius: 30px;
   text-decoration: none; 
-  width: 60%;
+  width:50%;
   color:#fff;
 }
 .btn:hover{
@@ -649,46 +650,14 @@ ul li:hover{
 }
 
 /*Services*/
-.services-cont{
-display: grid;
-grid-template-areas: "what      what        what"
-                     "services  services    services"
-                     "design    developer   API";
-                   
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: 1fr,1fr,2fr;
-font-family: 'Montserrat', sans-serif;
-font-weight: 200;
-font-size: medium;
-animation: moveright 3s linear 1;
-}
-.what{
-  grid-area: what;
-  width: 100%;
-  text-align: center;
-  margin-top: 2%;
-  font-weight: 400;
-  font-size: 20PX; 
-  color: white;
-}
 .services{
-  grid-area: services;
-  width: 100%;
-  text-align: center;
-  margin-top: 2%;
-  font-weight: 400;
-  font-size: 30PX;
-  color: #AB3EA6;
+  margin-left: 5%;
 }
 .list-services{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 70vh;
-  margin-top:3%;
-  margin-left: 15%;
-  list-style: none; 
+  width: 80%;
+  height: 50vh;
+  margin-top:20%;
+  margin-left: 35%;
   gap: 20%;
   animation: moveright2 4s linear 1;
 }
@@ -702,15 +671,33 @@ animation: moveright 3s linear 1;
     visibility: visible;
   }
 }
-
+.list-services div p{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 15%;
+  margin-left: 5%;
+  color: white;
+  }
+  .list-services div p:hover{
+    color:#43D0B8;
+  }
+.list-services h5{
+  justify-content: center;
+  width: 100%;
+  font-weight: 400;
+  gap: 10px;
+  color: #AB3EA6;
+  font-size: 30PX;
+}
 .design{
   grid-area: design;
-  width: 100%;
-  margin-top: 2%;
-  margin-left: 30%;
+  margin-top: 0%;
+ align-content: center;
 }
 .design img{
-  margin-top: 15%;
+  margin-top: 12%;
   font-weight: 100;
   height: 20vh;
   width: 25vh;
@@ -727,71 +714,8 @@ animation: moveright 3s linear 1;
   -webkit-transform:scale(1.5); /* Safari and Chrome */
   -o-transform:scale(1.5);
 }
-.developer{
-  grid-area: developer;
-  margin-top: 2%;
-}
-.developer img{
-  margin-top: 15%;
-  font-weight: 100;
-  height: 20vh;
-  width: 25vh;
-  border-radius: 50% ;
-  overflow: hidden;  
-  display:inline-block;
-  transition: 1s ease-in-out;
-  width:180px;
-}
-.developer img:hover{
-transform:scale(1.5);
--ms-transform:scale(1.5); /* IE 9 */
--moz-transform:scale(1.5); /* Firefox */
--webkit-transform:scale(1.5); /* Safari and Chrome */
--o-transform:scale(1.5);
-}
-.API{
-  grid-area:API;
-  margin-top: 2%;
-}
-.API img{
-  margin-top: 15%;
-  font-weight: 100;
-  height: 20vh;
-  width: 25vh;
-  border-radius: 50% ;
-  overflow: hidden;  
-  display:inline-block;
-  transition: 1s ease-in-out;
-  width:180px;
-}
-.API img:hover{
-  transform:scale(1.5);
-  -ms-transform:scale(1.5); /* IE 9 */
-  -moz-transform:scale(1.5); /* Firefox */
-  -webkit-transform:scale(1.5); /* Safari and Chrome */
-  -o-transform:scale(1.5);
-  }
-  .list-services li p{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    margin-top: 15%;
-    margin-left: 5%;
-    color: white;
-    }
-    .list-services li p:hover{
-      color:#43D0B8;
-    }
-  .list-services li  h3{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-right: 30%;  
-    font-weight: 100;
-    gap: 10px;
-    color: white;
-  }
+
+
 
 
 /*about*/
@@ -845,7 +769,7 @@ animation: moveright 4s linear ;
   display: flex;
   justify-content: center;
   width:100%;
-  margin-top: 0%;
+  margin-top: 1%;
   font-weight: 100;
   font-size: 20PX;
   color: #ab3ea6;
@@ -900,6 +824,7 @@ animation: moveright 4s linear ;
     font-size: 19PX;  
     line-height: 30px;
   }
+}
 @media(max-width:850px){
   .about-abt{
     grid-template-areas: "title2"
@@ -1005,4 +930,5 @@ grid-template-rows: 5% 5% 5% 30% 25% 10%;
       font-size: 8px;
     } 
   }
-}
+
+
