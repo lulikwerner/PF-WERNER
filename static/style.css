@@ -165,7 +165,7 @@
                        "button  photo";
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: 180px 150px 60px;
-  width: 100%;
+  width: 80%;
   margin-left: 2%;
   padding: 5%;
   color: white;
@@ -363,7 +363,7 @@
     width: 100%;
   }
   .btn{  
-    margin-top: 4%;
+    margin-top: 3%;
     margin-left: -10%;
   }
 }   
@@ -658,6 +658,9 @@ margin-right: 60%;
 }
 
 @media(max-width:850px){
+  .dbox{
+    height: 100vh;
+  }
   .split-screen{
     display: grid;
     grid-template-areas: "title"
@@ -705,6 +708,7 @@ margin-right: 60%;
 }
 
 @media(max-width:550px){
+ 
   .split-screen{
     margin-top: 5%;
     grid-template-rows: 10% 30% 45% 10%;
@@ -755,6 +759,7 @@ margin-right: 60%;
 }
   
 @media(max-width:400px){
+  
   .split-screen{
     height: 80vh;
     grid-template-rows: 10% 20% 55% 15%;
@@ -933,6 +938,7 @@ ul li:hover{
     margin-left:2%;
 }
 @media(max-width:550px){
+
   .project-cont{
     height: 8vh;
     font-size: 15px;
